@@ -82,8 +82,10 @@
     const v = VIDEOS[card.dataset.i];
     const ig = v.source === 'instagram';
     frame.className = 'player__frame' + (v.landscape ? ' wide' : '') + (ig ? ' ig' : '');
-    const url = ig ? `https://www.instagram.com/reel/${v.id}/embed/` : `https://drive.google.com/file/d/${v.id}/preview`;
-    frame.innerHTML = `<iframe src="${url}" allow="autoplay; fullscreen; encrypted-media" allowfullscreen scrolling="no"></iframe>`;
+    // Vidéos hébergées sur le site → lecteur natif (petite barre en bas sur iPhone, un appui n'arrête pas la vidéo).
+    frame.innerHTML = ig
+      ? `<iframe src="https://www.instagram.com/reel/${v.id}/embed/" allow="autoplay; fullscreen; encrypted-media" allowfullscreen scrolling="no"></iframe>`
+      : `<video src="assets/films/${v.id}.mp4" poster="${v.thumb || `assets/videos/${v.id}.jpg`}" controls playsinline autoplay preload="metadata" controlslist="nodownload"></video>`;
     $('#playerTitle').textContent = v.title;
     player.hidden = false; document.body.classList.add('locked');
   });
