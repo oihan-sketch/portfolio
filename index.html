@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oihan Hargain — Photographe & Vidéaste</title>
+  <meta name="description" content="Oihan Hargain, photographe et vidéaste. Sport, concert, festival, voyage, portrait.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=13">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#/" class="nav__logo">Oihan Hargain</a>
+    <nav class="nav__links">
+      <a href="#/video" data-link="video"><span>01</span>Vidéo</a>
+      <a href="#/photo" data-link="photo"><span>02</span>Photo</a>
+      <a href="#/about" data-link="about"><span>03</span>À propos</a>
+      <a href="#/contact" data-link="contact"><span>04</span>Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__reel" id="heroReel">
+        <div class="hero__layer is-on"><video class="hero__video" src="assets/videos/circus.mp4" autoplay muted playsinline preload="auto"></video></div>
+        <div class="hero__layer"><video class="hero__video" muted playsinline preload="auto"></video></div>
+      </div>
+      <div class="hero__shade"></div>
+      <div class="hero__content">
+        <p class="eyebrow">Photographe &nbsp;/&nbsp; Vidéaste</p>
+        <h1 class="hero__title">Oihan Hargain</h1>
+        <div class="hero__foot">
+          <p>Sport, concert, voyage.</p>
+          <span class="hero__now" id="heroNow"></span>
+          <a href="#/video" class="scroll-cue">Défiler <span>↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="section" id="video">
+      <div class="section__head">
+        <span class="section__num">01</span>
+        <h2 class="section__title">Vidéo</h2>
+        <p class="section__lede">Rugby, basket et concerts — aftermovies, highlights et films courts.</p>
+      </div>
+      <div class="filters" id="videoFilters" role="tablist"></div>
+      <div class="video-grid" id="videoGrid"></div>
+    </section>
+
+    <!-- PHOTO -->
+    <section class="section" id="photo">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <h2 class="section__title">Photo</h2>
+        <p class="section__lede">Le sport et la scène avant tout. Clique sur une série pour voir toute la galerie.</p>
+      </div>
+      <div class="features" id="photoFeatures"></div>
+      <p class="others" id="photoOthers"></p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <h2 class="section__title">À propos</h2>
+      </div>
+      <div class="about__grid">
+        <figure class="about__portrait reveal">
+          <img src="assets/portrait.jpg" alt="Portrait d'Oihan Hargain" loading="lazy">
+          <figcaption>Oihan Hargain — Photographe / Vidéaste</figcaption>
+        </figure>
+        <div class="about__text">
+          <p class="about__lead reveal">Photographe et vidéaste <em>free-lance</em>, basé en France.</p>
+          <p class="reveal">Je travaille entre le sport et l’événementiel&nbsp;: bords de terrain en rugby et en basket, fosses de concert, festivals, soirées. Sportif moi-même, je cherche l’instant où tout bascule — un essai, une foule qui se lève, une lumière qui traverse la fumée.</p>
+          <p class="reveal">Photo comme vidéo, je raconte l’énergie d’un moment&nbsp;: aftermovies, highlights, contenus pour les réseaux et séries photo. Formé à l’Université Bordeaux Montaigne.</p>
+          <dl class="about__facts reveal">
+            <div><dt>Métier</dt><dd>Photographe &amp; vidéaste free-lance</dd></div>
+            <div><dt>Domaines</dt><dd>Sport · Concert · Événementiel · Voyage</dd></div>
+            <div><dt>Formats</dt><dd>Aftermovie · Highlights · Réseaux sociaux · Séries photo</dd></div>
+            <div><dt>Basé en</dt><dd>France — déplacements partout</dd></div>
+          </dl>
+          <a class="about__cta reveal" href="https://www.linkedin.com/in/oihan-hargain-31b00b210/" target="_blank" rel="noopener">Voir mon profil LinkedIn <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="section__head">
+        <span class="section__num">04</span>
+        <h2 class="section__title">Contact</h2>
+      </div>
+      <div class="contact__grid">
+        <p class="contact__statement">Un projet, un événement, une marque&nbsp;? <em>Parlons-en.</em></p>
+        <ul class="contact__links">
+          <li><a href="https://www.instagram.com/oihan_pics/" target="_blank" rel="noopener"><span>Instagram</span><span>@oihan_pics ↗</span></a></li>
+          <li><a href="https://www.linkedin.com/in/oihan-hargain-31b00b210/" target="_blank" rel="noopener"><span>LinkedIn</span><span>Oihan Hargain ↗</span></a></li>
+          <li><a href="tel:+33624398157"><span>Téléphone</span><span>06 24 39 81 57</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Oihan Hargain</span>
+      <span>Photographie &amp; vidéo</span>
+      <a href="#/">Haut de page ↑</a>
+    </footer>
+  </main>
+
+  <!-- GALLERY VIEW -->
+  <section class="gallery" id="gallery" hidden>
+    <div class="gallery__head">
+      <a href="#/photo" class="gallery__back">← Toutes les séries</a>
+      <div class="gallery__titles">
+        <span class="gallery__meta" id="galleryMeta"></span>
+        <h2 class="gallery__title" id="galleryTitle"></h2>
+        <p class="gallery__desc" id="galleryDesc"></p>
+      </div>
+      <nav class="gallery__nav" id="galleryNav"></nav>
+    </div>
+    <div class="masonry" id="galleryGrid"></div>
+    <a class="gallery__next" id="galleryNext"></a>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" data-close aria-label="Fermer">Fermer ✕</button>
+    <button class="lightbox__arrow lightbox__arrow--prev" data-prev aria-label="Précédente">←</button>
+    <figure class="lightbox__figure"><img id="lightboxImg" alt=""></figure>
+    <button class="lightbox__arrow lightbox__arrow--next" data-next aria-label="Suivante">→</button>
+    <span class="lightbox__count" id="lightboxCount"></span>
+  </div>
+
+  <!-- VIDEO PLAYER -->
+  <div class="player" id="player" hidden>
+    <button class="lightbox__close" data-close aria-label="Fermer">Fermer ✕</button>
+    <div class="player__frame" id="playerFrame"></div>
+    <p class="player__title" id="playerTitle"></p>
+  </div>
+
+  <script src="data.js?v=13"></script>
+  <script src="app.js?v=13"></script>
+</body>
+</html>
